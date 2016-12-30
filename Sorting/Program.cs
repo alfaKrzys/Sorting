@@ -18,12 +18,10 @@ namespace Sorting
             //}
             //Console.Write("\n");
 
-            QuickSort<int> quickSort = new QuickSort<int>();
-            BubbleSort<int> bubbleSort = new BubbleSort<int>();
-
+          
             Console.WriteLine("Sortowanie babelkowe");
             var watch = System.Diagnostics.Stopwatch.StartNew();
-            bubbleSort.Sort(tab);
+            Sort.BubbleSort(tab);
             //foreach (int i in tab)
             //{
             //    Console.Write(i + " ");
@@ -35,7 +33,7 @@ namespace Sorting
 
             Console.WriteLine("Sortowanie szybkie");
             watch = System.Diagnostics.Stopwatch.StartNew();
-            quickSort.Sort(tab2);
+            Sort.QuickSort(tab2);
             //foreach (int i in tab2)
             //{
             //    Console.Write(i + " ");
